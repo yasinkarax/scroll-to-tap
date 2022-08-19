@@ -1,4 +1,4 @@
 # scroll-to-tap-button
 scroll to tap of page 
 
-![recording](https://i.hizliresim.com/j5lkl1e.gif)
+![recording](https://clipchamp.com/watch/xPcFH2pTx6q)
