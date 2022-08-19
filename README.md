@@ -11,4 +11,4 @@ It's can be usefull in long web pages.
 ![recording](https://i.hizliresim.com/8uzm8hf.gif)
 
 ### Clone the repository
-``` https://github.com/yasinkarax/scroll-to-tap-button.git
+``` https://github.com/yasinkarax/scroll-to-tap-button.git ```
