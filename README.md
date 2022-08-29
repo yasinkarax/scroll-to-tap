@@ -12,3 +12,9 @@ It's can be usefull in long web pages.
 
 ### Clone the repository
 ``` https://github.com/yasinkarax/scroll-to-tap-button.git ```
+
+##Icon or image
+You can use an icon or image for the button.
+
+
+
