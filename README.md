@@ -16,5 +16,8 @@ It's can be usefull in long web pages.
 ##Icon or image
 You can use an icon or image for the button.
 
+If you want to use icon i recomended Font Awesome.
 
+### You just add Font Awesome Kit your code.
+```https://fontawesome.com/docs/web/setup/use-kit```
 
