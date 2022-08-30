@@ -13,11 +13,11 @@ It's can be usefull in long web pages.
 ### Clone the repository
 ``` https://github.com/yasinkarax/scroll-to-tap-button.git ```
 
-##Icon or image
+###Icon or image
 You can use an icon or image for the button.
 
-If you want to use icon i recomended Font Awesome.
+If you want to use icon, i recomended Font Awesome.
 
-### You just add Font Awesome Kit your code.
+To add Font Awesome to your project, just paste Font Awesome Kit to your code.
 ```https://fontawesome.com/docs/web/setup/use-kit```
 
