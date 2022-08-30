@@ -17,6 +17,8 @@ It's can be usefull in long web pages.
 You can use an icon or image for the button.
 
 If you want to use icon, i recommend Font Awesome.
+
 To add Font Awesome to your project, just add Font Awesome Kit to your code then add the html icon code.
+
 ```https://fontawesome.com/docs/web/setup/use-kit```
 
