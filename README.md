@@ -3,12 +3,17 @@
 </a>
 
 
-# scroll to tap button
+# About the Scroll to Tap Button
 This button move you to top of the page.
 
 It's can be usefull in long web pages.
 
 ![recording](https://i.hizliresim.com/8uzm8hf.gif)
+
+### How to use?
+1. Add the html code to inside body tags in your html file.
+2. Add the css file to your project and describe the file path.
+3. Add the js file to your project and describe the file path in end of the body tag.
 
 ### Clone the repository
 ``` https://github.com/yasinkarax/scroll-to-tap-button.git ```
