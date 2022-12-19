@@ -42,9 +42,7 @@
         }
     }
     .up--bg{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 15px;
         height: 100%;
     }
     #up-text{
