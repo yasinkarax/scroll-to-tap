@@ -1,6 +1,7 @@
 var scrollFunc = function() {
   var scroll = window.scrollY;
-  if (scroll >= 600) {
+  var scrollSize = 600;
+  if (scroll >= scrollSize) {
     document.getElementById('up').style.display = 'block';
   } else {
     document.getElementById('up').style.display = 'none';
