@@ -15,6 +15,10 @@ It's can be usefull in long web pages.
 2. Add the css file to your project and describe the file path.
 3. Add the js file to your project and describe the file path in end of the body tag.
 
+### Set the Button's Visibility Time
+To set when the button is visible Change the scrollSize variable's value in the pageUp.js file.
+If you set a higher value the button will be visible more lately.
+
 ### Clone the repository
 ``` https://github.com/yasinkarax/scroll-to-tap-button.git ```
 
