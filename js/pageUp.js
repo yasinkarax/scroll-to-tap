@@ -1,11 +1,11 @@
 var scrollFunc = function() {
   var scroll = window.scrollY;
   var scrollSize = 600;
+  var upDisplay = document.getElementById('up').style;
   if (scroll >= scrollSize) {
-    document.getElementById('up').style.display = 'block';
+    upDisplay.display = 'block';
   } else {
-    document.getElementById('up').style.display = 'none';
-    document.getElementById('up').style.display = 'default';
+    upDisplay.display = 'none';
   }
 };
 
