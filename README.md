@@ -11,8 +11,17 @@ It's can be usefull in long web pages.
 ![recording](https://i.hizliresim.com/8uzm8hf.gif)
 
 ### How to use?
-1. Add the html code to inside body tags in your html file.
-2. Add the css file to your project and describe the file path.
+1. Add the html code to anywhere inside body tags in your html file.
+```
+<div id="up" onclick="pageUp()">
+    <div class="up-bg">
+        <img src="images/jet.png" alt="tap to up">
+    </div>
+    <div id="up-text">Page Up</div>
+</div>
+
+```
+2. Add the 'up.css' file to your project and describe the file path.
 3. Add the js file to your project and describe the file path in end of the body tag.
 
 ### Set the Button's Visibility Time
