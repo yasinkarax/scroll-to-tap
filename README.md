@@ -8,7 +8,7 @@ This button move you to top of the page.
 
 It's can be usefull in long web pages.
 
-![recording](https://i.hizliresim.com/8uzm8hf.gif)
+![recording](https:/c/i.hizliresim.com/8uzm8hf.gif)
 
 ### How to use?
 1. Add the html code to anywhere inside body tags in your html file.
