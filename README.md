@@ -40,3 +40,8 @@ To add Font Awesome to your project, add Font Awesome Kit to your code, then add
 ```https://fontawesome.com/docs/web/setup/use-kit```
 
 Or you can add image inside div with up--bg class like me.
+
+
+### Smooth Scrolling
+The button have smooth scrolling behaviour by default.
+You can disabled it by delete the ``` scroll-behavior: smooth; ``` code in main css file.
