@@ -11,8 +11,7 @@ var scrollFunc = function() {
 
 window.addEventListener("scroll", scrollFunc);
 
-
-function pageUp(){
-	document.body.scrollTop = 0; // For safari
-	document.documentElement.scrollTop = 0; // for chrome, firefox, ıe and opera
+function pageUp() {
+  document.body.scrollTop = 0; // For safari
+  document.documentElement.scrollTop = 0; // for chrome, firefox, ıe and opera
 }
