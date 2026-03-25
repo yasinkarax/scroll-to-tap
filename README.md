@@ -2,10 +2,8 @@
 <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
 </a>
 
-
 # About the Scroll to Tap Button
 This button moves you to the top of the page.
-
 ![recording](https:/c/i.hizliresim.com/8uzm8hf.gif)
 
 ### How to use?
