@@ -13,7 +13,7 @@ It's can be usefull in long web pages.
 ### How to use?
 1. Add the html code to anywhere inside body tags in your html file.
 ```
-<div id="up" onclick="pageUp()">
+<div id="up" aria-label="Page up" role="button" tabindex="0">
     <div class="up-bg">
         <img src="images/jet.png" alt="tap to up">
     </div>
