@@ -3,6 +3,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 .content{
     min-height: 2000px;
     width: 100%;
@@ -11,8 +15,10 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    background: rgb(108,173,255);
-    background: linear-gradient(90deg, rgba(108,173,255,1) 0%, rgba(234,141,255,1) 100%);
+    --page-bg-left: 14 20 40;
+    --page-bg-right: 90 25 140;
+    --page-bg-mid: 30 140 220;
+    background: linear-gradient(to top, rgb(14, 20, 40), rgb(30, 140, 220), rgb(90, 25, 140));
     padding: 2rem 1rem;
 }   
 .content h1{

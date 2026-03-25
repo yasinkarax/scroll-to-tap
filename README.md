@@ -31,7 +31,13 @@ This button moves you to the top of the page.
     width: var(--up-size);
     z-index: 999999999;
     display: none;
-    background: red;
+    --glass-alpha: 0.16;
+    --glass-border-alpha: 0.34;
+    --up-accent: 0 200 255;
+    background: rgba(255, 255, 255, var(--glass-alpha));
+    border: 1px solid rgba(255, 255, 255, var(--glass-border-alpha));
+    backdrop-filter: blur(14px) saturate(170%);
+    -webkit-backdrop-filter: blur(14px) saturate(170%);
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -39,6 +45,47 @@ This button moves you to the top of the page.
     position: fixed;
     right: var(--up-right);
     bottom: var(--up-bottom);
+    overflow: hidden;
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        inset 0 -8px 18px rgba(0, 0, 0, 0.08);
+
+    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+#up::before{
+    content: "";
+    position: absolute;
+    inset: -30%;
+    background:
+        radial-gradient(circle at 30% 18%, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0) 55%),
+        linear-gradient(120deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+    transform: rotate(8deg);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+#up::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(circle at 60% 80%, rgb(var(--up-accent) / 0.18), rgba(0, 0, 0, 0) 60%);
+    pointer-events: none;
+}
+
+#up:hover{
+    transform: translateY(-1px);
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.26),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55),
+        inset 0 -8px 18px rgba(0, 0, 0, 0.08);
+}
+
+#up:focus-visible{
+    outline: 3px solid rgb(var(--up-accent) / 0.55);
+    outline-offset: 3px;
 }
 
 @media (max-width: 736px){
@@ -46,9 +93,6 @@ This button moves you to the top of the page.
         --up-size: 60px;
         --up-right: 15px;
         --up-bottom: 25px;
-
-        opacity: 0.3;
-        color: blue;
     }
 }
 
@@ -78,6 +122,11 @@ This button moves you to the top of the page.
     fill: #fff !important;
 }
 
+#up svg{
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.18));
+    transition: transform 160ms ease;
+}
+
 #up i{
     transform: rotate(-90deg);
     font-size: calc(var(--up-size) * 0.46);
@@ -100,7 +149,22 @@ The button icon is included by default as an inline SVG inside `.up-bg`. You can
 ### Change colors
 If you want to customize the colors, update the following in `css/up.css`:
 - Icon color (SVG): change `fill: #fff !important;` in `#up svg path`.
-- Button background: change `red` in `#up { background: red; }`.
+- Button background (glass): change `--glass-alpha` in `#up`.
+- Button border: change `--glass-border-alpha` in `#up`.
+- Accent glow: change `--up-accent` in `#up`.
+
+### Remove the liquid glass effect (flat button)
+To switch from the liquid glass look to a solid flat color:
+- Remove/disable `backdrop-filter` in `#up` (set it to `none`).
+- Delete (or comment out) `#up::before` and `#up::after`.
+- Replace `background` and `border` in `#up` with your solid colors, for example:
+```css
+#up{
+  background: #2b2b2b;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+```
 
 
 ### Clone the repository
