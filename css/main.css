@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 .content{
-    height: 2000px;
+    min-height: 2000px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -13,8 +13,13 @@
     position: relative;
     background: rgb(108,173,255);
     background: linear-gradient(90deg, rgba(108,173,255,1) 0%, rgba(234,141,255,1) 100%);
+    padding: 2rem 1rem;
 }   
-.content *{
-    font-size: 80px;
+.content h1{
+    font-size: clamp(40px, 7vw, 80px);
     color: white;
-}   
+}
+.content h2{
+    font-size: clamp(28px, 5vw, 60px);
+    color: white;
+}
